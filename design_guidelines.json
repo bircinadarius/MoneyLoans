@@ -1,0 +1,134 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "Money Lent Tracker",
+      "vibe": "Financial Zen x Cyber-Glass",
+      "metaphor": "Liquid Glass Ledger - A futuristic, transparent view of personal debts.",
+      "theme_mode": "dark"
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Manrope, sans-serif",
+        "body": "Inter, sans-serif",
+        "numbers": "JetBrains Mono, monospace"
+      },
+      "font_weights": {
+        "headings": "600",
+        "body": "400",
+        "bold": "700"
+      },
+      "scale": {
+        "h1": "text-4xl md:text-5xl tracking-tight",
+        "h2": "text-3xl tracking-tight",
+        "h3": "text-2xl font-semibold",
+        "body": "text-base leading-relaxed",
+        "small": "text-sm text-muted-foreground",
+        "tiny": "text-xs uppercase tracking-widest"
+      },
+      "imports": [
+        "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      ]
+    },
+    "colors": {
+      "palette": {
+        "background": "#020408",
+        "surface": "#0F1218",
+        "primary": "#6366f1",
+        "primary_foreground": "#ffffff",
+        "secondary": "#1e293b",
+        "accent": "#8b5cf6",
+        "success": "#10b981",
+        "warning": "#f59e0b",
+        "danger": "#ef4444",
+        "muted": "#94a3b8",
+        "border": "rgba(255, 255, 255, 0.1)"
+      },
+      "glass": {
+        "heavy": "bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl",
+        "medium": "bg-white/5 backdrop-blur-lg border border-white/5",
+        "light": "bg-white/5 backdrop-blur-md border border-white/5",
+        "liquid": "bg-gradient-to-br from-white/10 to-transparent backdrop-blur-xl border-t border-l border-white/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)]"
+      },
+      "gradients": {
+        "glow": "bg-gradient-to-r from-indigo-500/20 via-purple-500/20 to-pink-500/20 blur-3xl",
+        "card_hover": "hover:bg-white/10 transition-colors duration-300"
+      }
+    },
+    "layout": {
+      "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+      "grid_dashboard": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6",
+      "grid_bento": "grid grid-cols-1 md:grid-cols-12 gap-6",
+      "spacing": {
+        "section": "py-12 md:py-20",
+        "card_padding": "p-6 md:p-8"
+      }
+    },
+    "components": {
+      "cards": {
+        "style": "glass-liquid rounded-3xl",
+        "hover": "hover:scale-[1.01] transition-transform duration-300 ease-out"
+      },
+      "buttons": {
+        "primary": "bg-primary hover:bg-primary/90 text-white rounded-full px-8 py-3 font-medium transition-all shadow-[0_0_20px_rgba(99,102,241,0.3)] hover:shadow-[0_0_30px_rgba(99,102,241,0.5)]",
+        "secondary": "bg-white/10 hover:bg-white/20 text-white rounded-full px-6 py-2 backdrop-blur-md border border-white/10",
+        "ghost": "hover:bg-white/5 text-muted-foreground hover:text-white rounded-lg px-4 py-2"
+      },
+      "inputs": {
+        "style": "bg-black/20 border-white/10 text-white placeholder:text-white/30 focus:border-primary/50 focus:ring-1 focus:ring-primary/50 rounded-xl px-4 py-3 backdrop-blur-sm"
+      },
+      "modals": {
+        "desktop": "bg-black/80 backdrop-blur-2xl border border-white/10 sm:rounded-3xl shadow-2xl",
+        "mobile": "bottom-sheet rounded-t-3xl border-t border-white/10 bg-black/90 backdrop-blur-xl"
+      }
+    },
+    "visual_enhancers": {
+      "noise": "fixed inset-0 opacity-[0.03] pointer-events-none z-50 mix-blend-overlay bg-[url('https://grainy-gradients.vercel.app/noise.svg')]",
+      "glow_orbs": [
+        "absolute top-[-10%] left-[-10%] w-[40vw] h-[40vw] bg-indigo-600/20 rounded-full blur-[100px]",
+        "absolute bottom-[-10%] right-[-10%] w-[30vw] h-[30vw] bg-purple-600/20 rounded-full blur-[100px]"
+      ]
+    },
+    "motion": {
+      "page_transition": {
+        "initial": { "opacity": 0, "y": 20 },
+        "animate": { "opacity": 1, "y": 0 },
+        "exit": { "opacity": 0, "y": -20 },
+        "transition": { "duration": 0.4, "ease": "easeOut" }
+      },
+      "hover_lift": "hover:-translate-y-1 transition-transform duration-300",
+      "list_stagger": 0.1
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_bg": "https://images.pexels.com/photos/28428584/pexels-photo-28428584.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "avatars": [
+        "https://images.unsplash.com/photo-1670012896865-f531c5fb65d9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwzfHxkaXZlcnNlJTIwdXNlciUyMGF2YXRhcnMlMjBwb3J0cmFpdHN8ZW58MHx8fHwxNzcyMDc0MDMzfDA&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1619241805829-34fb64299391?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwyfHxkaXZlcnNlJTIwdXNlciUyMGF2YXRhcnMlMjBwb3J0cmFpdHN8ZW58MHx8fHwxNzcyMDc0MDMzfDA&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1586006552138-ea18985ab492?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHw0fHxkaXZlcnNlJTIwdXNlciUyMGF2YXRhcnMlMjBwb3J0cmFpdHN8ZW58MHx8fHwxNzcyMDc0MDMzfDA&ixlib=rb-4.1.0&q=85"
+      ],
+      "empty_state": "https://images.unsplash.com/photo-1748466694158-3e172aac0968?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHw0fHwzZCUyMGFic3RyYWN0JTIwZ2xhc3MlMjBzaGFwZXMlMjBkYXJrJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3NzIwNzQwMzJ8MA&ixlib=rb-4.1.0&q=85"
+    },
+    "icons": "lucide-react"
+  },
+  "instructions_to_main_agent": [
+    "1. Setup: Ensure Tailwind 'dark' mode is enabled in config and applied to the html/body tag.",
+    "2. Base Styles: Apply a global dark background (#020408) to the body. Do not use default white.",
+    "3. Glass Effect: Create a reusable 'GlassCard' component that uses the 'liquid' class defined in the design system. This should be the default container for all content.",
+    "4. Dashboard: Implement the dashboard using a Bento Grid layout. Use the 'numbers' font (JetBrains Mono) for all currency values.",
+    "5. Forms: All inputs must use the transparent glass style. No solid white backgrounds for inputs.",
+    "6. Mobile: On mobile, the 'Add Loan' and 'Record Payment' forms should appear as bottom sheets (Drawers) with a glass backdrop.",
+    "7. Testing: Add 'data-testid' to all interactive elements (buttons, inputs, cards).",
+    "8. Universal Rule: Never use pure black (#000000) for cards. Use very dark grey/blue with transparency.",
+    "9. Animation: Use 'framer-motion' for page transitions and list item entrance animations."
+  ],
+  "universal_guidelines": [
+    "Do not use gradients for dark colors.",
+    "Do not use 'transition: all'.",
+    "Do not center align the app container.",
+    "Use 'sonner' for toasts.",
+    "Use 'lucide-react' for icons.",
+    "Components must use named exports.",
+    "Pages must use default exports."
+  ]
+}
